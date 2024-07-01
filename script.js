@@ -58,3 +58,11 @@ for (let i = 1; i <= 5; i++) {
     console.log("human: " + humanScore)
     console.log("computer: " + computerScore)
 }
+
+if (computerScore > humanScore) {
+    console.log("YOU LOST!!!")
+} else if (computerScore < humanScore) {
+    console.log("YOU WIN!!!")
+} else {
+    console.log("YOU TIED SMH!!!")
+}
