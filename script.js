@@ -17,3 +17,5 @@ function getHumanChoice() {
 let compChoice = getComputerChoice()
 let humanChoice = getHumanChoice()
 
+let computerScore = 0
+let humanScore = 0
