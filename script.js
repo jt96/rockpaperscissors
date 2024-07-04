@@ -10,8 +10,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let humanChoice = prompt("rock, paper, or scissors?")
-    return humanChoice
+    
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -47,22 +46,29 @@ function playRound(humanChoice, computerChoice) {
 let computerScore = 0
 let humanScore = 0
 
-for (let i = 1; i <= 5; i++) {
-    console.log("ROUND " + i + " BEGIN!!!")
-    let computerSelection = getComputerChoice()
-    let humanSelection = getHumanChoice()
-
+const rock = document.querySelector("#rock");
+rock.addEventListener("click", function (e) {
+    const humanSelection = rock.textContent;
+    console.log("human selected " + humanSelection);
+    const computerSelection = getComputerChoice()
     console.log("computer selected " + computerSelection)
-    console.log("human selected " + humanSelection)
-    playRound(humanSelection, computerSelection)
-    console.log("human: " + humanScore)
-    console.log("computer: " + computerScore)
-}
+    playRound(humanSelection, computerSelection);
+});
 
-if (computerScore > humanScore) {
-    console.log("YOU LOST!!!")
-} else if (computerScore < humanScore) {
-    console.log("YOU WIN!!!")
-} else {
-    console.log("YOU TIED SMH!!!")
-}
+const paper = document.querySelector("#paper");
+paper.addEventListener("click", function (e) {
+    const humanSelection = paper.textContent;
+    console.log("human selected " + humanSelection);
+    const computerSelection = getComputerChoice()
+    console.log("computer selected " + computerSelection)
+    playRound(humanSelection, computerSelection);
+});
+
+const scissors = document.querySelector("#scissors");
+scissors.addEventListener("click", function (e) {
+    const humanSelection = scissors.textContent;
+    console.log("human selected " + humanSelection);
+    const computerSelection = getComputerChoice()
+    console.log("computer selected " + computerSelection)
+    playRound(humanSelection, computerSelection);
+});
