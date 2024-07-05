@@ -4,21 +4,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; /* Adjust as needed */
+    background-color: #f0f0f0; 
 }
 
 .container {
     text-align: center;
-    max-width: 600px; /* Adjust max-width based on your design */
+    max-width: 600px; 
     width: 100%;
     padding: 20px;
-    background-color: #fff; /* Adjust background color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for container */
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .game-area {
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 20px; 
 }
 
 #score {
@@ -31,7 +31,7 @@ body {
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .button-container {
@@ -42,7 +42,7 @@ body {
 }
 
 #rock {
-    background-color: #8b8c7a; /* Rock color */
+    background-color: #8b8c7a; 
     color: white;
     font-size: 16px;
     padding: 15px 30px;
@@ -57,7 +57,7 @@ body {
 }
 
 #rock:hover {
-    background-color: #7a7b68; /* Darker rock color on hover */
+    background-color: #7a7b68; 
 }
 
 #rock:active {
@@ -66,11 +66,11 @@ body {
 }
 
 #paper {
-    background-color: #ffffff; /* White color */
-    color: #333; /* Dark text color */
+    background-color: #ffffff; 
+    color: #333; 
     font-size: 16px;
     padding: 15px 30px;
-    border: 1px solid #ccc; /* Light gray border */
+    border: 1px solid #ccc; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
@@ -90,11 +90,11 @@ body {
 }
 
 #scissors {
-    background-color: #C0C0C0; /* Metallic gray color */
-    color: #333; /* Dark text color */
+    background-color: #C0C0C0; 
+    color: #333; 
     font-size: 16px;
     padding: 15px 30px;
-    border: 1px solid #999; /* Darker gray border */
+    border: 1px solid #999; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
@@ -120,7 +120,7 @@ body {
     position: absolute;
     width: 10px;
     height: 30px;
-    background-color: #999; /* Darker gray for blade effect */
+    background-color: #999;
     border-radius: 5px;
     top: 50%;
     transform: translateY(-50%);
