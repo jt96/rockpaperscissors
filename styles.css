@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Adjust as needed */
+}
+
+.container {
+    text-align: center;
+    max-width: 600px; /* Adjust max-width based on your design */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff; /* Adjust background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for container */
+}
+
+.game-area {
+    margin-top: 20px; /* Adjust spacing */
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#results {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#rock {
+    background-color: #8b8c7a; /* Rock color */
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+#rock:hover {
+    background-color: #7a7b68; /* Darker rock color on hover */
+}
+
+#rock:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#paper {
+    background-color: #ffffff; /* White color */
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#paper:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#paper:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#scissors {
+    background-color: #C0C0C0; /* Metallic gray color */
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: 1px solid #999; /* Darker gray border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+#scissors:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#scissors:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#scissors::before,
+#scissors::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #999; /* Darker gray for blade effect */
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#scissors::before {
+    left: -15px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#scissors::after {
+    right: -15px;
+    transform: translateY(-50%) rotate(-45deg);
+}
